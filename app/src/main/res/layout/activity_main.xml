@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/banner"
         android:layout_width="wrap_content"
@@ -15,59 +16,22 @@
         android:gravity="center|top"
         android:text="@string/banner_text_choose_weapon"
         android:textSize="28sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
-
-    <Button
-        android:id="@+id/paperButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:onClick="onClickPaper"
-        android:text="@string/paper"
-        app:layout_constraintEnd_toStartOf="@+id/ScissorsButton"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/rockButton"
-        app:layout_constraintTop_toBottomOf="@+id/banner"
-        tools:ignore="UsingOnClickInXml" />
-
-    <Button
-        android:id="@+id/ScissorsButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:onClick="onClickScissors"
-        android:text="@string/scissors"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/paperButton"
-        app:layout_constraintTop_toTopOf="@+id/paperButton"
-        tools:ignore="UsingOnClickInXml" />
-
-    <Button
-        android:id="@+id/rockButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:onClick="onClickRock"
-        android:text="@string/rock"
-        app:layout_constraintEnd_toStartOf="@+id/paperButton"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/paperButton"
-        tools:ignore="UsingOnClickInXml" />
 
     <TextView
         android:id="@+id/gameRecord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:gravity="center|top"
         android:text="@string/default_game_record"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/paperButton" />
+        app:layout_constraintTop_toBottomOf="@+id/paperImageButton" />
 
     <TextView
         android:id="@+id/weaponReport"
@@ -85,13 +49,15 @@
         android:id="@+id/gameWinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:gravity="center"
         android:text="@string/default_game_winner"
-        android:textSize="20sp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/weaponReport" />
+        app:layout_constraintTop_toBottomOf="@+id/weaponReport"
+        app:layout_constraintVertical_bias="0.29000002" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -113,4 +79,51 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.94" />
+
+    <ImageButton
+        android:id="@+id/scissorsImageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/scissors"
+        android:contentDescription="@string/speakable_scissors"
+        android:onClick="onClickScissors"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/paperImageButton"
+        app:layout_constraintTop_toTopOf="@+id/paperImageButton"
+        app:srcCompat="@drawable/scissors"
+        tools:ignore="UsingOnClickInXml" />
+
+    <ImageButton
+        android:id="@+id/rockImageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rock"
+        android:contentDescription="@string/speakable_rock"
+        android:onClick="onClickRock"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/paperImageButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/paperImageButton"
+        app:srcCompat="@drawable/rock"
+        tools:ignore="UsingOnClickInXml" />
+
+    <ImageButton
+        android:id="@+id/paperImageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/paper"
+        android:contentDescription="@string/speakable_paper"
+        android:onClick="onClickPaper"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/scissorsImageButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rockImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/banner"
+        app:srcCompat="@drawable/paper"
+        tools:ignore="UsingOnClickInXml" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

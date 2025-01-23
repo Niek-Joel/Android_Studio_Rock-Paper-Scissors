@@ -21,4 +21,9 @@
     <string name="player_wins">"You win: "</string>
     <string name="computer_wins">"You lose: "</string>
     <string name="tie_game">Tie Game</string>
+
+
+    <string name="speakable_rock">A rock</string>
+    <string name="speakable_paper">A sheet of paper</string>
+    <string name="speakable_scissors">A pair of scissors</string>
 </resources>

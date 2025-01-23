@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CS408_Lab_1A_RockPaperScissors"
+        android:theme="@style/Theme.Android_Studio_PaperRockScissors"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--  Color format: TTRRGGBB  (Basic Hex RGB values prepended with [T]transparency value.)-->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="tan">#FFE6DAD3</color>
+    <color name="Turquoise">#FFCEE5D7</color>
 </resources>
