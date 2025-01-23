@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:text="@string/banner_text_choose_weapon"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/rockButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickRock"
+        android:text="@string/rock"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/paperButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickPaper"
+        android:text="@string/paper"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/ScissorsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickScissors"
+        android:text="@string/scissors"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/gameRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:text="@string/default_game_record" />
+
+    <TextView
+        android:id="@+id/weaponReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/default_weapon_report" />
+
+    <TextView
+        android:id="@+id/gameWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/default_game_winner" />
+</LinearLayout>

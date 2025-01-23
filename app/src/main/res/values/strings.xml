@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CS408_Lab_1A_Rock-Paper-Scissors</string>
+    <string name="banner_text_choose_weapon">Welcome to Rock-Paper-Scissors!\nPlease Choose your weapon:</string>
+
+    <string name="scissors">Scissors</string>
+    <string name="paper">Paper</string>
+    <string name="rock">Rock</string>
+
+    <string name="default_weapon_report">Player\'s Weapon: \nComputer\'s Weapon: </string>
+    <string name="default_game_record">Player: 0, Computer: 0</string>
+    <string name="default_game_winner">No Winner Yet!</string>
+
+    <string name="players_weapon_report">Player\'s Weapon: </string>
+    <string name="computers_weapon_report">Computer\'s Weapon: </string>
+
+    <string name="rock_beats_scissors">rock breaks scissors</string>
+    <string name="paper_beats_rock">paper wraps rock</string>
+    <string name="scissors_beats_paper">scissors cut paper</string>
+
+    <!--  Double quotes included to preserve white space at the end  -->
+    <string name="player_wins">"You win: "</string>
+    <string name="computer_wins">"You lose: "</string>
+    <string name="tie_game">Tie Game</string>
+</resources>
